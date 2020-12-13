@@ -50,4 +50,28 @@ Do the same steps in remote server & copy its public key to jenkins server(in je
 Integration between Jenkins & Docker
 -------------------------------------
 
+On jenkins server configure docker host by command : export DOCKER_HOST=“ssh://user@remotehost”
+
+Test remote Docker host is working or not
+-----------------------------------------
+
+Create a freestyle job in jenins --select Execute shell from build step
+
+type below contents: docker -H ssh://jenkins@172.31.28.25 run hello-world
+
+you can use username ubuntu also.if we want to use jenkins user ,on remote server create a new user named jenkins & need to generate sshkey from that user and copy it to jenkins server authorised files
+
+Run the job & check if it success.
+
+Configure Docker hub for push image from jenkins
+---------------------------------------------------
+
+Configure credentails in jenkins with your docker hub username & password.Give the same ID as configured in Jenkinsfile 
+
+Create pipeline job
+--------------------
+
+Create pipeline job --select the pipeline from scm --give git repo : https://github.com/rjshk013/jenkins-tomcataws
+
+
 
