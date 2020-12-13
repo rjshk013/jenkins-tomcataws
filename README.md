@@ -73,5 +73,12 @@ Create pipeline job
 
 Create pipeline job --select the pipeline from scm --give git repo : https://github.com/rjshk013/jenkins-tomcataws
 
+Check the pipeline stages & finally check application is running on remote server as docker container
+
+check from browser its working : http://public-ip:8003/LoginWebApp-1
+
+reference : https://devops4solutions.com/integrate-jenkins-with-docker/
+https://devops4solutions.com/ci-cd-using-jenkins-and-docker-2/
+
 
 
