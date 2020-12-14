@@ -70,6 +70,7 @@ Configure credentails in jenkins with your docker hub username & password.Give t
 
 Create pipeline job
 --------------------
+Note :modify your remote docker host ip & useranme before creating pipeline fron Jenkinsfile
 
 Create pipeline job --select the pipeline from scm --give git repo : https://github.com/rjshk013/jenkins-tomcataws
 
