@@ -13,7 +13,7 @@ https://devops4solutions.com/ci-cd-using-jenkins-and-docker-2/
 Requirement:
 jenkins server setup on aws ec2 :
 ---------------------------------
-Install jenkins latest stable version with suggested plugins 
+Install jenkins latest stable version with suggested plugins .Better options is to install jenkins blueocean plugin
 
 Docker must be installed &given permission to docker.sock  sudo chmod 666  /var/run/docker.sock
 
